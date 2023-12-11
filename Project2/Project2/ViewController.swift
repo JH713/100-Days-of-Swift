@@ -51,7 +51,7 @@ class ViewController: UIViewController {
             score += 1
         } else {
             title = "Wrong"
-            wrongMessage = "That's the flag of \(countries[sender.tag].capitalized).\n"
+            wrongMessage = "That's the flag of \(countries[sender.tag].uppercased()).\n"
             score -= 1
         }
         if questionNum < 10 {
