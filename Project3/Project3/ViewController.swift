@@ -14,14 +14,13 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         title = "Storm Viewer"
         navigationController?.navigationBar.prefersLargeTitles = true
-        tableView.tableHeaderView = UIView() 
+        tableView.tableHeaderView = UIView()
         
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: path)
         
         for item in items {
-            print(item)
             if item.hasPrefix("nssl") {
                 pictures.append(item)
             }

@@ -81,12 +81,12 @@
 				A65AB03D2B28660D006F15AA /* AppDelegate.swift */,
 				A65AB03F2B28660D006F15AA /* SceneDelegate.swift */,
 				A65AB0412B28660D006F15AA /* ViewController.swift */,
+				A65AB0662B286FD9006F15AA /* DetailViewController.swift */,
 				A65AB0432B28660D006F15AA /* Main.storyboard */,
 				A65AB0462B28660F006F15AA /* Assets.xcassets */,
 				A65AB0482B28660F006F15AA /* LaunchScreen.storyboard */,
 				A65AB04B2B28660F006F15AA /* Info.plist */,
 				A65AB0512B286936006F15AA /* Content */,
-				A65AB0662B286FD9006F15AA /* DetailViewController.swift */,
 			);
 			path = Project3;
 			sourceTree = "<group>";
