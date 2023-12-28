@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.scrollEdgeAppearance = UINavigationBarAppearance()
         navigationController?.navigationBar.scrollEdgeAppearance?.backgroundColor = .white
+        navigationItem.largeTitleDisplayMode = .never
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openTapped))
         navigationItem.hidesBackButton = true
         progressView = UIProgressView(progressViewStyle: .default)
