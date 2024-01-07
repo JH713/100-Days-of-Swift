@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8be-ax-MUT">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="734-4w-INB">
+                                <rect key="frame" x="96" y="133" width="201" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="734-4w-INB" secondAttribute="height" multiplier="201:100" id="LGn-oR-W4Q"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eW3-TD-9MG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ou9-pl-fRr">
+                                <rect key="frame" x="96.666666666666686" y="393" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ou9-pl-fRr" secondAttribute="height" multiplier="2:1" id="gZg-AA-Lh5"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bpH-IT-eom"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w10-ak-hLL">
+                                <rect key="frame" x="96.666666666666686" y="263" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w10-ak-hLL" secondAttribute="height" multiplier="2:1" id="ggo-Ga-ijI"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tn9-CK-k71"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ou9-pl-fRr" firstAttribute="centerX" secondItem="w10-ak-hLL" secondAttribute="centerX" id="1tM-QQ-h4Z"/>
+                            <constraint firstItem="w10-ak-hLL" firstAttribute="height" secondItem="734-4w-INB" secondAttribute="height" id="DWH-J9-D6W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ou9-pl-fRr" secondAttribute="bottom" constant="20" id="Eyj-Rn-upy"/>
+                            <constraint firstItem="734-4w-INB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Izp-R4-R2D"/>
+                            <constraint firstItem="ou9-pl-fRr" firstAttribute="top" secondItem="w10-ak-hLL" secondAttribute="bottom" constant="30" id="JiY-u8-SOl"/>
+                            <constraint firstItem="ou9-pl-fRr" firstAttribute="height" secondItem="w10-ak-hLL" secondAttribute="height" id="LWJ-6c-9Ss"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="734-4w-INB" secondAttribute="top" constant="-30" id="OlP-mf-MpM"/>
+                            <constraint firstItem="w10-ak-hLL" firstAttribute="centerX" secondItem="734-4w-INB" secondAttribute="centerX" id="pGn-79-g9a"/>
+                            <constraint firstItem="w10-ak-hLL" firstAttribute="top" secondItem="734-4w-INB" secondAttribute="bottom" constant="30" id="vV1-j7-Awj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="s0d-m3-txG"/>
+                    <connections>
+                        <outlet property="button1" destination="734-4w-INB" id="WLZ-B6-QVy"/>
+                        <outlet property="button2" destination="w10-ak-hLL" id="GPY-Je-laP"/>
+                        <outlet property="button3" destination="ou9-pl-fRr" id="mBl-jU-9vz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046.5648854961833" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="k0i-ee-13z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8be-ax-MUT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iNP-0b-0By">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1yr-f1-spO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vsV-U0-Ly0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
